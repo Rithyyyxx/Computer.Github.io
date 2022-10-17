@@ -1,0 +1,54 @@
+.project{
+    width: 98%;
+    height: 300px;
+    margin: auto;
+}
+.project .main-box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.project .main-box .img-box{
+    margin-top: 20px;
+    position: relative;
+    width: 24%;
+    height: 250px;
+
+}
+.project .main-box .img-box .label{
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 50%;
+    background-color: rgb(61, 61, 61);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.project .main-box .img-box:hover{
+    transform: scale(1.04);
+}
+.project .main-box .img-box:hover .label{
+    background-color: black;
+}
+@media (max-width:1159px) {
+    .project .main-box .img-box{
+        width: 32%;
+}
+.project .main-box .img-box .label{
+    font: 16px;
+}
+@media (max-width:888px) {
+    .project .main-box .img-box{
+        width: 49%;
+}
+@media (max-width:489px) {
+    .project .main-box .img-box{
+        width: 100%;
+}
+.project .main-box .img-box .label{
+    font: 15px;
+}
